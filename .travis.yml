@@ -7,4 +7,4 @@ services:
     - docker
 before_install:
     - docker run -p 6379:6379 -d --name redis redis:3.0.7-alpine
-script: npm run test:mutation
+script: NODE_ENV=dev && npm run test:mutation
