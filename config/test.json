@@ -1,3 +1,4 @@
 {
-	"DBHost": "localhost"
+	"DBHost": "localhost",
+	"RedisInstance" : 6
 }

@@ -25,8 +25,8 @@ app.route("/events")
 app.route("/aggregations")
 	.get(eventstore.getAggregations);
 	
-// app.route("/streams")
-// 	.get(eventstore.getStreams);
+app.route("/streams")
+	.get(eventstore.getStreams);
 
 app.route('/setup')
 	.post(eventstore.setup);	

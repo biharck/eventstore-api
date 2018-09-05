@@ -12,15 +12,23 @@
     "express": "^4.13.4",
     "mongoose": "^4.4.15",
     "morgan": "^1.7.0",
-    "schm": "^0.4.0"
+    "schm": "^0.4.0",
+    "stryker": "^0.29.1"
   },
   "devDependencies": {
     "chai": "^3.5.0",
     "chai-http": "^2.0.1",
-    "mocha": "^2.4.5"
+    "mocha": "^2.4.5",
+    "stryker-api": "^0.21.0",
+    "stryker-html-reporter": "^0.16.1",
+    "stryker-javascript-mutator": "^0.9.1",
+    "stryker-mocha-framework": "^0.12.1",
+    "stryker-mocha-runner": "^0.14.1"
   },
   "scripts": {
     "start": "NODE_ENV=dev && node server.js",
-    "test": "mocha --timeout 10000"
+    "test": "mocha --timeout 10000",
+    "test:mutation": "stryker run",
+    "stryker:init": "stryker init"
   }
 }

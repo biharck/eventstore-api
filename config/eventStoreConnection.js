@@ -1,6 +1,10 @@
 const {EventStore, InMemoryPublisher, RedisProvider} = require('@eventstore.net/event.store');
+const config = require('config'); 
 
 const redisConfig = {
+    options: {
+        db: 6
+    },
     standalone: {
         host: 'localhost',
         port: 6379
