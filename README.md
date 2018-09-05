@@ -29,9 +29,7 @@ The api will be available at the 3000 port with the following endpoints:
 
 		The body could be any JSON data, like:
        ```javascript
-       	{
-            "key": "value"
-        }
+       	{"key": "value"}
        ```
 * /events [GET]
 	*	http://localhost:3000/events?streamId=777&aggregation=orders 
